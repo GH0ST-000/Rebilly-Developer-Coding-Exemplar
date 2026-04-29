@@ -1,0 +1,46 @@
+:root {
+    --font-family: system-ui;
+    --font-size: 14px;
+    --max-width: 480px;
+    --margin-top: 2rem;
+    --padding: 0 1rem;
+    --task-bg-color: #eee;
+    --button-color: #c33;
+}
+
+body {
+    font: var(--font-size) var(--font-family);
+    max-width: var(--max-width);
+    margin: var(--margin-top) auto;
+    padding: var(--padding);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--task-bg-color);
+}
+
+button[data-remove-task] {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--button-color);
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.4rem 0.6rem;
+}
